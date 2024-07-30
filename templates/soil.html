@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SOIL</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+<body class="page2">
+     <div class="container-fluid">
+            <div class="container">
+                <h2></h2>
+                    <ul>
+                        <li><a href='/home'>Home</a></li>
+                        <li><a href='/training'>Training</a></li>
+                        <li><a href='/soil'>Soil</a></li>
+                        <li><a href='/water'>Water</a></li>
+                        <li><a href="/overall">Predict</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+            </div>
+      <div class="content">
+        <h1>Soil</h1>
+        <p>Soil is an essential part of successful farming and the original source of nutrients used in crop growing. 
+          The nutrients transfer from the soil into plants which make food healthier. 
+          Healthy soil produces the most nutritious and most abundant food supply</p>
+        <p>Enter the values of soil parameters here:</p>
+      
+      <!--<form method="POST" action="/predictsoil" class="mt-5">
+        <label for="pH"><h3>pH:</h3></label><br>
+        <input type="text" id="pH" name="pH" required>
+        <label for="organic_carbon"><h3>Organic carbon (%):</h3></label><br>
+        <input type="text" id="oc" name="oc" required>
+        <label for="Cation Exchange Capacity"><h3>Cation Exchange Capacity (cmol/kg):</h3></label><br>
+        <input type="text" id="cec" name="cec" required>
+        <label for="Nitrogen"><h3>Nitrogen (N) (ppm):</h3></label><br>
+        <input type="text" id="Nitrogen" name="Nitrogen" required>
+        <label for="Phosphorous"><h3>Phosphorous (P) (ppm):</h3></label><br>
+        <input type="text" id="Phosphorous" name="Phosphorous" required>
+        <label for="Potassium"><h3>Potassium (K) (ppm):</h3></label><br>
+        <input type="text" id="Potassium" name="Potassium" required>
+        <input type="submit" value="Submit">
+      </form>-->
+      <form method="POST" action="/predictsoil" class="mt-5">
+        <div class="form-row">
+          <div class="form-column">
+            <label for="pH"><h3>pH:</h3></label>
+            <input type="text" id="pH" name="pH" required>
+          </div>
+          <div class="form-column">
+            <label for="oc"><h3>Organic carbon (%):</h3></label>
+            <input type="text" id="oc" name="oc" required>
+          </div>
+          <div class="form-column">
+            <label for="cec"><h3>Cation Exchange Capacity (cmol/kg):</h3></label>
+            <input type="text" id="cec" name="cec" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-column">
+            <label for="Nitrogen"><h3>Nitrogen (N) (ppm):</h3></label>
+            <input type="text" id="Nitrogen" name="Nitrogen" required>
+          </div>
+          <div class="form-column">
+            <label for="Phosphorous"><h3>Phosphorous (P) (ppm):</h3></label>
+            <input type="text" id="Phosphorous" name="Phosphorous" required>
+          </div>
+          <div class="form-column">
+            <label for="Potassium"><h3>Potassium (K) (ppm):</h3></label>
+            <input type="text" id="Potassium" name="Potassium" required>
+          </div>
+        </div>
+        <div class="center">
+        <input type="submit" value="Submit">
+        </div>
+      </form>
+      
+
+    </div>
+</body>
+</html>

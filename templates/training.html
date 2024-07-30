@@ -1,0 +1,55 @@
+<html>
+        <head>
+            <meta charset="utf-8">
+            <title>AGRICULTURE</title>
+            <link rel="stylesheet" href="../static/style.css">
+        </head>
+    <body class="page5">
+         <div class="container-fluid">
+                <div class="container">
+                    <h2></h2>
+                        <ul>
+                            <li><a href='/home'>Home</a></li>
+                            <li><a href='/training'>Training</a></li>
+                            <li><a href='/soil'>Soil</a></li>
+                            <li><a href='/water'>Water</a></li>
+                            <li><a href="/overall">Predict</a></li>
+                            <li><a href="/about">About</a></li>
+                        </ul>
+                </div>
+          <div class="content">
+            <h1>Train the model</h1>
+            <center>
+                <p>Consider DecisionTreeClassifier as training model for soil and RandomForestClassifier as 
+                    training model for water,if you are unaware of these models.</p>
+            <form method="POST" action="/training" class="mt-5">
+            <label for="training_model"><p>training model:</p></label>
+            <select id="training model" name="training_model" required>
+                <option value="Logistic">Logistic</option>
+                <option value="Support Vector Machine">Support Vector Machine</option>
+                <option value="Decision Tree">Decision Tree</option>
+                <option value="Random Forest">Random Forest</option>
+                <option value="K Nearest Neighbours">K Nearest Neighbours</option>
+                <option value="Gradient Boosting">Gradient Boosting</option>
+                <option value="Adaboost">Adaboost</option>
+                <option value="XGboost">XGboost</option>
+            </select>
+            <br><br><br><br><br><br><br><br>
+            <center>
+            <input type="submit" value="Start predicting"></center>
+               <p>Go to soil and water web pages</p>
+          </form>
+          </center>
+          </div>
+          <br><br><br><br<br><br><br><br><br<br><br>
+          <center><p1>Generated Score for above mentioned training models</p1></center>
+          <div class="row">
+            <div class="column">
+               <img src="../static/barsoil.jpg " alt="bar_soil">
+            </div>
+            <div class="column">
+               <img src="../static/barwater.jpg" alt="bar_water">
+            </div>
+          </div>
+    </body>
+    </html>

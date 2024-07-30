@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WATER</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body class="page3">
+ <div class="container-fluid">
+        <div class="container">
+            <h2></h2>
+                <ul>
+                    <li><a href='/home'>Home</a></li>
+                    <li><a href='/training'>Training</a></li>
+                    <li><a href='/soil'>Soil</a></li>
+                    <li><a href='/water'>Water</a></li>
+                    <li><a href="/overall">Predict</a></li>
+                    <li><a href="/about">About</a></li>  
+                </ul>
+        </div>
+  <div class="content">
+    <h1>Water</h1>
+    <p>Water is a critical input for agricultural production and plays an important role in food security. 
+        Irrigated agriculture represents 20 percent of the total cultivated land and 
+        contributes 40 percent of the total food produced worldwide. </p>
+    <p>Enter the values of water parameters here:</p>
+    <form method="POST" action="/predictwater" class="mt-5">
+        <div class="form-row">
+            <div class="form-column">
+               <label for="pH"><h3>pH:</h3></label><br>
+               <input type="text" id="pH" name="pH">
+            </div>
+            <div class="form-column">
+               <label for="Salinity"><h3>Salinity (dS/m):</h3></label><br>
+               <input type="text" id="Salinity" name="Salinity">
+            </div>
+        </div>
+            <div class="form-row">
+                <div class="form-column">
+                 <label for="Toxicity"><h3>Toxicity (ppm):</h3></label><br>
+                 <input type="text" id="Toxicity" name="Toxicity">
+                </div>
+                <div class="form-column">
+                    <label for="Alkalinity"><h3>Alkalinity (ppm):</h3></label><br>
+                    <input type="text" id="Alkalinity" name="Alkalinity">
+                </div>            
+            </div>
+          <div class="form-row">
+            <div class="form-column">  
+                <label for="Conductivity"><h3>Conductivity (dS/m):</h3></label><br>
+                <input type="text" id="Conductivity" name="Conductivity">
+             </div>
+         </div>
+        <div class="center">
+        <input type="submit" value="Submit">
+        </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
